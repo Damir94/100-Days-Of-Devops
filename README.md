@@ -2,9 +2,9 @@
 
 I’ve started my 100 Days of DevOps challenge to strengthen my skills through consistent, hands-on practice. This journey is focused on real-world projects that simulate the problems DevOps engineers face in production environments:
 
-✅ Application Deployment (Project Nautilus)
-☸️ Kubernetes Orchestration
-🔧 Terraform Automation
+ - ✅ Application Deployment (Project Nautilus)
+ - ☸️ Kubernetes Orchestration
+ - 🔧 Terraform Automation
 ---
 
 ## 🧩 Projects Overview
