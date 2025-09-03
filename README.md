@@ -1,12 +1,10 @@
-# 🚀 100 Days of DevOps – Hands-On Projects & Challenges
-This repository documents my 100-day DevOps journey through three real-world, end-to-end projects:
+# 🚀 100 Days of DevOps – Real Projects, Real Learning
 
-✅ Application Deployment (xfusion – Project Nautilus)
-☸️ Container Orchestration (Kubernetes)
-🔧 Infrastructure as Code (Terraform automation)
+I’ve started my 100 Days of DevOps challenge to strengthen my skills through consistent, hands-on practice. This journey is focused on real-world projects that simulate the problems DevOps engineers face in production environments:
 
-Each day includes code, documentation, and lessons learned from practical, business-oriented scenarios. The goal isn’t just to follow tutorials, but to simulate real operational challenges DevOps engineers face in production environments.
-
+✅ Application Deployment (Project Nautilus)
+☸️ Kubernetes Orchestration
+🔧 Terraform Automation
 ---
 
 ## 🧩 Projects Overview
@@ -68,18 +66,15 @@ Inside each, you’ll find:
 
 ---
 
-## 🎯 Why I’m Doing This
+## 🎯 My goals with this challenge:
 
-I’m doing this challenge to:
+ - Build a portfolio that demonstrates real business impact
 
-- Solidify my DevOps skills through **consistent, real-world practice**
-- Build a **portfolio that demonstrates business impact**, not just theoretical knowledge
-- Learn to structure and document technical work for **team handoff, recruiters, and future me**
-- Challenge myself to improve in areas like:
-  - Linux system administration
-  - CI/CD and automation
-  - Cloud provisioning
-  - Monitoring and troubleshooting
+ - Gain deeper expertise in Linux, CI/CD, cloud provisioning, monitoring & troubleshooting
+
+ - Practice structuring and documenting technical work for teams, recruiters, and long-term growth
+
+This isn’t just a tutorial exercise — it’s about solving practical deployment and operational challenges while continuously improving as a DevOps engineer.
 
 ---
 
