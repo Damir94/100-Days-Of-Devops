@@ -86,6 +86,3 @@ If you're a recruiter, hiring manager, or fellow DevOps learner – feel free to
 - 📧 abdurakhimov.da@gmail.com
 - 🌐 [GitHub]https://github.com/Damir94
 
----
-
-> 📌 _“Infrastructure as code is more than automation – it’s a discipline, a mindset, and a roadmap to scalable systems.”_
