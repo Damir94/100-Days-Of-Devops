@@ -64,7 +64,8 @@ Has correct home directory
 
 Uses a non-interactive shell
 
-![CLI](screenshot/jump_host.png)
+<img width="917" height="652" alt="Screenshot 2025-09-04 at 9 34 04 AM" src="https://github.com/user-attachments/assets/cbbe3c7f-1b17-47b0-824b-5aa665a2e6c3" />
+
 
 💡 Testing the login with su - siva would have the access denied.
 
@@ -79,3 +80,4 @@ Navigating multi-server infrastructure using Jump Hosts (bastion architecture)
 
 ### 💬 Reflection
 Even simple user creation can have huge implications in production environments. This task reflects what DevOps professionals must consider daily: automation, access control, and compliance, while ensuring the system remains safe and maintainable.
+
