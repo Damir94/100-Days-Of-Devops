@@ -1,4 +1,4 @@
-# Day 3 - Linux Permissions & Script Executability | xFusionCorp Backup Script
+# Day 4 - Linux Permissions & Script Executability | xFusionCorp Backup Script
 
 ## Project Overview
 As part of the **Nautilus Project** at xFusionCorp Industries, the DevOps team is automating key infrastructure tasks, starting with backups. The sysadmin team developed a new backup script (`xfusioncorp.sh`) and distributed it across various application servers within the **Stratos Datacenter**.
@@ -81,3 +81,4 @@ r-x for others
 This was a deceptively simple task that highlighted the importance of understanding file permission fundamentals in Linux. It reinforced a key DevOps mindset: assume nothing, verify everything.
 
 I’m embracing every misstep as an opportunity to deepen my foundational knowledge, and that’s exactly the kind of iterative thinking DevOps thrives on.
+
