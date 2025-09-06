@@ -69,7 +69,7 @@ sudo systemctl restart tomcat
 
 6. **Test Application**
 
-curl http://stapp01:3001
+curl http://stapp01:3003
 
 <img width="755" height="391" alt="Screenshot 2025-09-04 at 6 58 41 AM" src="https://github.com/user-attachments/assets/637f8d5a-dfae-4d6f-93bd-01aa96884212" />
 
@@ -86,4 +86,5 @@ Tomcat configuration flexibility enables quick adaptation for different environm
 WAR deployment to the ROOT context simplifies application access for users.
 
 Command-line deployment skills are crucial for DevOps engineers in hybrid environments.
+
 
