@@ -8,7 +8,7 @@ For Day 11, I simulated a real-world Java application deployment scenario. The N
 ## Objective
 - Install Tomcat on App Server 1
 
-- Configure Tomcat to run on a custom port (3001)
+- Configure Tomcat to run on a custom port (3003)
 
 - Deploy `ROOT.war` so the app runs directly on the base URL
 
@@ -86,3 +86,4 @@ Tomcat configuration flexibility enables quick adaptation for different environm
 WAR deployment to the ROOT context simplifies application access for users.
 
 Command-line deployment skills are crucial for DevOps engineers in hybrid environments.
+
