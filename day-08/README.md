@@ -34,6 +34,7 @@ Used sudo to ensure Ansible is installed system-wide.
 ansible --version
 
 Confirmed version 4.9.0 installed successfully.
+
 $<img width="621" height="127" alt="Screenshot 2025-09-06 at 7 38 38 AM" src="https://github.com/user-attachments/assets/84417f05-2f3c-49fa-8b00-1d8d27dfc665" />
 
 4. Verified Global Installation Path
@@ -55,6 +56,7 @@ Configuration Management Fundamentals - Installing and preparing Ansible.
 Linux Administration - Managing global software installations.
 
 Version Control in IaC Tools - Specifying exact versions for reproducibility.
+
 
 
 
