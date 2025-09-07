@@ -18,6 +18,7 @@ Unrestricted access to the web server poses a critical security risk, including 
 Use of iptables to allow traffic from the LBR host (172.16.238.14) and block all others, with rules persistent after reboot.
 
 ## Implementation Steps
+
 1. Installed iptables on each app server:
 
 sudo yum install -y iptables iptables-services
@@ -195,3 +196,4 @@ Step 5: Final Verification
 •	Rules are persistent after reboot, meeting business security requirements
 
 •	All verification steps documented with screenshots for transparency
+
