@@ -115,7 +115,6 @@ Step 5: Final Verification
 
 •	From jump host: Port 8087 still blocked
 
-![Screenshot](screenshots/lb-port-access.png)
 
 ## Summary
 •	Implemented iptables to secure Apache on port 8087
@@ -149,7 +148,7 @@ sudo iptables -L -n -v --line-numbers
 -ACCEPT tcp from 172.16.238.14
 
 -DROP tcp from all others
-![Screenshot](screenshots/ip-table-rules.png)
+
 
 Step 2: Tested from Load Balancer (allowed)
 
@@ -157,7 +156,6 @@ curl http://stapp01:8087
 
 curl http://stapp02:8087
 
-![Screenshot](screenshots/ip-table-lb-verify.png)
 •	Succeeded
 
 Step 3: Tested from jump host or another app server (blocked)
@@ -179,14 +177,12 @@ sudo iptables -L -n -v
 
 •	Ensured rules remain after reboot
 
-![Screenshot](screenshots/ip-tables-persistent.png)
 Step 5: Final Verification
 
 •	From LBR: Apache still accessible
 
 •	From jump host: Port 8087 still blocked
 
-![Screenshot](screenshots/lb-port-access.png)
 
 ## Summary
 •	Implemented iptables to secure Apache on port 8087
@@ -196,4 +192,5 @@ Step 5: Final Verification
 •	Rules are persistent after reboot, meeting business security requirements
 
 •	All verification steps documented with screenshots for transparency
+
 
