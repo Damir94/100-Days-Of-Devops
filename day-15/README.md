@@ -1,4 +1,4 @@
-# Day 10 of 100 Days of DevOps: Secure Nginx Deployment
+# Day 15 of 100 Days of DevOps: Secure Nginx Deployment
 Continuing my 100 Days of DevOps journey, today I worked on a real-world server preparation task, setting up a secure Nginx server with SSL on App Server 3 in Stratos Datacenter.
 
 ## Project Overview
@@ -65,3 +65,4 @@ Essence: Ensures the application will be accessible securely, aligning with mode
 
 ## Recruiter takeaway 
 This demonstrates my ability to handle real-world server provisioning tasks that are essential in DevOps and cloud environments.
+
