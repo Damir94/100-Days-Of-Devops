@@ -32,7 +32,7 @@ Essence: SSL certificates enforce encrypted communication, critical for business
 
 3.	Configured Nginx for HTTPS
 
--Config file: /etc/nginx/conf.d/nautilus.conf
+-Config file: /etc/nginx/conf.d/ssl.conf
 
 Essence: Ensures the application will be accessible securely, aligning with modern security best practices.
 
@@ -65,4 +65,5 @@ Essence: Ensures the application will be accessible securely, aligning with mode
 
 ## Recruiter takeaway 
 This demonstrates my ability to handle real-world server provisioning tasks that are essential in DevOps and cloud environments.
+
 
