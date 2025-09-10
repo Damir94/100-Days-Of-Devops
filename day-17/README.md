@@ -9,7 +9,7 @@ The Nautilus development team planned to deploy a new application requiring Post
 During this task, I also learned an important real-world lesson: PostgreSQL was not installed on the jump_host, but on a separate database server. I had to SSH into the correct server before running database commands — exactly the kind of situational awareness needed in production environments.
 
 ## Business Need & Essence
-1. Secure Access Control: Applications should not use the default postgres user. A dedicated database user (kodekloud_joy) was created for isolation and security.
+1. Secure Access Control: Applications should not use the default postgres user. A dedicated database user (kodekloud_aim) was created for isolation and security.
 2. Resource Separation: A separate database (kodekloud_db3) ensures application data is logically isolated.
 3. Permission Management: Fine-grained privileges prevent unauthorized access while giving developers the freedom to use the database.
 
@@ -35,7 +35,7 @@ CREATE USER kodekloud_aim WITH PASSWORD 'BruCStnMT5';
 CREATE DATABASE kodekloud_db3;
 
 6. Granted Permissions
-GRANT ALL PRIVILEGES ON DATABASE kodekloud_db3 TO kodekloud_joy;
+GRANT ALL PRIVILEGES ON DATABASE kodekloud_db3 TO kodekloud_aim;
 
 <img width="729" height="219" alt="Screenshot 2025-09-10 at 8 22 56 AM" src="https://github.com/user-attachments/assets/3f99efe2-8ad3-44a8-987f-3bb458fda8e4" />
 
@@ -47,4 +47,5 @@ GRANT ALL PRIVILEGES ON DATABASE kodekloud_db3 TO kodekloud_joy;
 4. Learned the importance of working on the correct server — a common real-world DevOps troubleshooting scenario.
 
 This exercise reflects a common real-world task for DevOps engineers, bridging application development and infrastructure setup.
+
 
