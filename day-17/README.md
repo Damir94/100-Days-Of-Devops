@@ -10,7 +10,7 @@ During this task, I also learned an important real-world lesson: PostgreSQL was 
 
 ## Business Need & Essence
 1. Secure Access Control: Applications should not use the default postgres user. A dedicated database user (kodekloud_joy) was created for isolation and security.
-2. Resource Separation: A separate database (kodekloud_db1) ensures application data is logically isolated.
+2. Resource Separation: A separate database (kodekloud_db3) ensures application data is logically isolated.
 3. Permission Management: Fine-grained privileges prevent unauthorized access while giving developers the freedom to use the database.
 
 This directly supports business continuity, security, and compliance, while enabling developers to move faster.
@@ -47,3 +47,4 @@ GRANT ALL PRIVILEGES ON DATABASE kodekloud_db3 TO kodekloud_joy;
 4. Learned the importance of working on the correct server — a common real-world DevOps troubleshooting scenario.
 
 This exercise reflects a common real-world task for DevOps engineers, bridging application development and infrastructure setup.
+
