@@ -30,7 +30,7 @@ By completing this task, I demonstrated the ability to setup, configure, and val
 <img width="1045" height="217" alt="Screenshot 2025-09-11 at 9 03 00 AM" src="https://github.com/user-attachments/assets/1ddc9480-e5de-4c99-854b-ac85f28d2b39" />
 <img width="1053" height="105" alt="Screenshot 2025-09-11 at 9 03 59 AM" src="https://github.com/user-attachments/assets/aaa7e57e-42be-478c-bec6-dbb5f5e74f33" />
 
-•	Configured Apache to serve on port 6000 (no VirtualHost needed for this task): sudo vi /etc/httpd/conf/httpd.conf
+•	Configured Apache to serve on port 5003 (no VirtualHost needed for this task): sudo vi /etc/httpd/conf/httpd.conf
 
 
 **Changed Listen 80 → Listen 5003**
@@ -97,3 +97,4 @@ Message displayed: "App is able to connect to the database using user kodekloud_
 
 ## Conclusion
 This task illustrates a real-world DevOps workflow, bridging application, web server, and database layers. It ensures that multiple App servers can serve a WordPress application reliably while maintaining proper DB access control. Completing this exercise strengthened my practical cloud infrastructure and DevOps skills, making me confident in deploying scalable, secure, and highly available web applications.
+
