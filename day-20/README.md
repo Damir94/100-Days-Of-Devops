@@ -56,11 +56,11 @@ listen.mode = 0660
 
 Restart PHP-FPM:
 
-sudo systemctl enable --now php-fpm
-sudo systemctl enable --now nginx
+ - sudo systemctl enable --now php-fpm
+ - sudo systemctl enable --now nginx
 
-sudo systemctl restart php-fpm
-sudo systemctl restart nginx
+ - sudo systemctl restart php-fpm
+ - sudo systemctl restart nginx
 
 4. Test the Setup
 From jump host:
@@ -91,4 +91,5 @@ This task deepened my understanding of:
 •	The role of PHP-FPM sockets in modern Nginx/PHP architectures.
 
 •	Thinking like a DevOps engineer bridging business & technical needs.
+
 
