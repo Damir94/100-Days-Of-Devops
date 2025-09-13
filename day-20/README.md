@@ -1,4 +1,4 @@
-# Day 20 of 100 Days of DevOps - Deploying a PHP-FPM 8.1 App with Nginx on Custom Port
+# Day 20 of 100 Days of DevOps - Deploying a PHP-FPM 8.2 App with Nginx on Custom Port
 
 The Nautilus application development team is planning to launch a new PHP-based application, 
 which they want to deploy on Nautilus infra in Stratos DC. 
@@ -24,7 +24,7 @@ Inside the server { ... } block, configure it like this:
 
 sudo systemctl reload nginx
 
-2️. Installed PHP-FPM 8.1
+2️. Installed PHP-FPM 8.2
 
 
  - sudo yum install -y epel-release
@@ -73,7 +73,7 @@ Expected output: Welcome to xFusionCorp Industries!
 
 
 ## Business Value Delivered
-•	Developer Alignment: Infrastructure matched dev team’s runtime (PHP 8.1) → fewer bugs at deployment.
+•	Developer Alignment: Infrastructure matched dev team’s runtime (PHP 8.2) → fewer bugs at deployment.
 
 •	Security & Flexibility: Running on custom port avoids conflicts, supports traffic shaping.
 
@@ -91,5 +91,6 @@ This task deepened my understanding of:
 •	The role of PHP-FPM sockets in modern Nginx/PHP architectures.
 
 •	Thinking like a DevOps engineer bridging business & technical needs.
+
 
 
