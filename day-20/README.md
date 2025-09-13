@@ -26,12 +26,11 @@ sudo systemctl reload nginx
 
 2️. Installed PHP-FPM 8.1
 
-# Enabled PHP 8.1 module
 
-sudo yum install -y epel-release
-sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
-sudo yum module reset php -y
-sudo yum module enable php:remi-8.2 -y
+ - sudo yum install -y epel-release
+ - sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+ - sudo yum module reset php -y
+ - sudo yum module enable php:remi-8.2 -y
 
 # Installed PHP and PHP-FPM
 
@@ -92,3 +91,4 @@ This task deepened my understanding of:
 •	The role of PHP-FPM sockets in modern Nginx/PHP architectures.
 
 •	Thinking like a DevOps engineer bridging business & technical needs.
+
