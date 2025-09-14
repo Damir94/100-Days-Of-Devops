@@ -16,8 +16,8 @@ sudo yum install -y git
 
 2️. Create the Bare Repository
 
-sudo mkdir -p /opt/news.git
-sudo git init --bare /opt/news.git
+ - sudo mkdir -p /opt/news.git
+ - sudo git init --bare /opt/news.git
 
 <img width="743" height="288" alt="Screenshot 2025-09-13 at 8 33 02 PM" src="https://github.com/user-attachments/assets/b1eb54fa-fdd4-4209-91ce-ca5149881fe0" />
 
@@ -27,5 +27,6 @@ sudo git init --bare /opt/news.git
 ls -l /opt/news.git
 
 <img width="496" height="241" alt="Screenshot 2025-09-13 at 8 33 50 PM" src="https://github.com/user-attachments/assets/1a6d2a5d-259f-4337-801b-75d495dd3b4c" />
+
 
 
