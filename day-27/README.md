@@ -1,4 +1,4 @@
-## Day 26 of 100 Days of DevOps - Git Commit Revert Task
+## Day 27 of 100 Days of DevOps - Git Commit Revert Task
 
 # Task Overview
 The Nautilus application development team reported issues with the latest changes pushed to the repository located at:
@@ -35,3 +35,4 @@ Using git revert is safer than git reset for production and team workflows becau
  - It provides a clear, trackable commit showing when and why a change was undone.
 
 <img width="1520" height="715" alt="Screenshot 2025-09-20 at 2 46 02 PM" src="https://github.com/user-attachments/assets/4ae7c3ae-7192-4cfd-9e42-d73694c27613" />
+
