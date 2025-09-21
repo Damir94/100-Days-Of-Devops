@@ -1,4 +1,4 @@
-# 28 of 100 Days of DevOps Git Cherry-Pick: Selective Commit Merge
+# Day 28 of 100 Days of DevOps - Git Cherry-Pick: Selective Commit Merge
  - In this task, I worked on the Nautilus eCommerce project repository (/opt/ecommerce.git, cloned at /usr/src/kodekloudrepos). The repository had two branches:
     - master – stable production-ready branch
     - feature – where developers are actively working on new updates
@@ -41,5 +41,6 @@
 <img width="538" height="311" alt="Screenshot 2025-09-21 at 6 21 08 AM" src="https://github.com/user-attachments/assets/ba14f134-7c4f-4260-8a7e-96c1268ad1b1" />
 
 <img width="1340" height="546" alt="Screenshot 2025-09-21 at 6 09 01 AM" src="https://github.com/user-attachments/assets/7735c370-977a-46c3-abac-3e7d2b0dc476" />
+
 
 
