@@ -1,4 +1,4 @@
-# Day 28 of 100 Days of DevOps - Pull Request Workflow: Adding The Fox and Grapes Story
+# Day 29 of 100 Days of DevOps - Pull Request Workflow: Adding The Fox and Grapes Story
  - In this task, we practiced a proper Git workflow to ensure that code is never pushed directly to the master branch. Instead, all new changes are reviewed and approved before being merged.
 
 ## Steps Completed
@@ -40,4 +40,5 @@ Key Takeaways
 <img width="1163" height="856" alt="Screenshot 2025-09-21 at 9 25 47 PM" src="https://github.com/user-attachments/assets/9a9b0db0-7827-4c64-a367-dfc88ec425ca" />
 
 <img width="1671" height="560" alt="Screenshot 2025-09-21 at 9 25 30 PM" src="https://github.com/user-attachments/assets/b8e264ce-0723-4a0d-bd8a-c7bd0c979294" />
+
 
