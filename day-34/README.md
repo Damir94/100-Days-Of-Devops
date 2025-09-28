@@ -22,9 +22,9 @@ This exercise simulates a real-world DevOps workflow where teams need automated 
 
 ## Project Steps & Explanation
 1. Access the Storage Server
-
+```bash
 ssh natasha@ststor01
-
+```
 Purpose: Connect to the server hosting the bare Git repository to create server-side hooks.
 
 2. Navigate to the Bare Repository Hooks Directory
@@ -61,3 +61,4 @@ sudo git merge feature
 •	Team Collaboration: Ensures all developers work with consistent release versions.
 
 •	CI/CD Ready: Tags can trigger downstream deployment pipelines.
+
