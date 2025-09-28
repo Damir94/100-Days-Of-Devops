@@ -37,13 +37,17 @@ Purpose: Git hooks reside in the hooks/ folder of the bare repository.
 ```bash
 sudo vi post-update
 ```
+4. Here is a snippet of the git hook that worked for me:
 
-4. Make the Hook Executable
+<img width="688" height="201" alt="Screenshot 2025-09-28 at 10 41 05 AM" src="https://github.com/user-attachments/assets/78277166-85df-45a9-8303-5bef6fae0f07" />
+
+   
+5. Make the Hook Executable
 ```
 sudo chmod +x post-update
 ```
 
-5. Merge Feature Branch into Master
+6. Merge Feature Branch into Master
 ```bash
 cd /usr/src/kodekloudrepos/apps
 
@@ -61,6 +65,7 @@ sudo git merge feature
 •	Team Collaboration: Ensures all developers work with consistent release versions.
 
 •	CI/CD Ready: Tags can trigger downstream deployment pipelines.
+
 
 
 
