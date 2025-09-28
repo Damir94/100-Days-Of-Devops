@@ -29,7 +29,7 @@ Purpose: Connect to the server hosting the bare Git repository to create server-
 
 2. Navigate to the Bare Repository Hooks Directory
 ```bash
-cd /opt/cluster.git/hooks
+cd /opt/apps.git/hooks
 ```
 Purpose: Git hooks reside in the hooks/ folder of the bare repository.
 
@@ -61,4 +61,5 @@ sudo git merge feature
 •	Team Collaboration: Ensures all developers work with consistent release versions.
 
 •	CI/CD Ready: Tags can trigger downstream deployment pipelines.
+
 
