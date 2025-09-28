@@ -1,4 +1,4 @@
-# 100 Days of DevOps - Day 34: Containerizing Applications with Docker on App Server 2
+# 100 Days of DevOps - Day 35: Containerizing Applications with Docker on App Server 2
 
 ## Overview
 
@@ -50,3 +50,4 @@ To confirm that Docker is functioning properly, we ran a test container:
     sudo docker run hello-world
 ```
 The successful output confirmed that Docker was installed correctly and ready to run containers.
+
