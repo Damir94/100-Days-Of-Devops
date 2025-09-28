@@ -35,7 +35,7 @@ Purpose: Git hooks reside in the hooks/ folder of the bare repository.
 
 3. Create the Post-Update Hook
 ```bash
- vi post-update
+sudo vi post-update
 ```
 
 4. Make the Hook Executable
@@ -61,5 +61,6 @@ sudo git merge feature
 •	Team Collaboration: Ensures all developers work with consistent release versions.
 
 •	CI/CD Ready: Tags can trigger downstream deployment pipelines.
+
 
 
