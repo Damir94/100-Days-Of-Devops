@@ -28,11 +28,12 @@ docker images busybox
 
 ### Example output:
 
- - REPOSITORY   TAG     IMAGE ID       CREATED       SIZE
- - busybox      musl    <image_id>     <time>        <size>
- - busybox      local   <image_id>     <time>        <size>
+ - REPOSITORY   - TAG     - IMAGE ID       - CREATED       - SIZE
+ - busybox      - musl    - <image_id>     - <time>        - <size>
+ - busybox      - local   - <image_id>     - <time>        - <size>
 
 ### Notes
  - The busybox:local tag will be used in upcoming testing tasks.
  - No additional configuration was required on App Server 2 beyond Docker being installed and running.
+
 
