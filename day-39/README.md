@@ -1,4 +1,4 @@
-# 100 Days of DevOps - Day 39 - Creating Docker Image from Running Container
+# 100 Days of DevOps - Day 39: Creating Docker Image from Running Container
 
 ## Task Overview
 
@@ -6,7 +6,7 @@ The Nautilus developers requested the DevOps team to create a new Docker image f
 
 ## Task Details
 
- - Source Container: ubuntu_latest (running on Application Server 2)
+ - Source Container: ubuntu_latest (running on Application Server 1)
 
  - Target Image: news:nautilus
 
@@ -34,4 +34,5 @@ Listed Docker images to ensure the new image was created successfully:
 
 A new Docker image named news:nautilus was successfully created from the running container ubuntu_latest on Application Server 2. 
 This image can now be used to run new containers with the developer’s changes preserved.
+
 
