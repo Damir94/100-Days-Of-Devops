@@ -55,6 +55,9 @@ Confirmed that Apache responds on port 8088:
 ```
 Output displayed the Apache2 Default Page, confirming success. 
 
+<img width="1748" height="820" alt="Screenshot 2025-10-02 at 10 50 44 PM" src="https://github.com/user-attachments/assets/17aab1bd-9334-4e3e-9618-8f61f6e47e7a" />
+
+
 ## Results
 
  - Apache2 is installed and configured.
@@ -66,3 +69,4 @@ Output displayed the Apache2 Default Page, confirming success.
 - We used sed instead of vi since the container didn’t have text editors pre-installed.
 - netstat was unavailable, so we verified using curl.
 - The container will serve HTTP requests on port 8088 across all interfaces (localhost, 127.0.0.1, container IP).
+
