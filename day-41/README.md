@@ -73,7 +73,7 @@ sudo docker run -d -p 8082:8082 custom-apache:latest
 
 This maps port 8082 on the host to port 8082 in the container.
 
-###Testing the Setup
+### Testing the Setup
 
 To confirm Apache is running correctly, open your browser or use curl:
 ```bash
@@ -91,3 +91,4 @@ The document root and other Apache settings remain unchanged.
 Only the listening port has been modified from 80 to 8082.
 
 This image can be used as a base for further application testing by the Nautilus team.
+
