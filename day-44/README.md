@@ -59,7 +59,7 @@ sudo vi docker-compose.yml
 ```
 Paste the YAML content shown above.
 
-### 3.Launch the container
+### 3. Launch the container
 If Docker Compose is built into Docker (recommended):
 ```bash
 sudo docker compose -f /opt/docker/docker-compose.yml up -d
@@ -68,12 +68,12 @@ If using standalone Compose:
 ```bash
 sudo docker-compose -f /opt/docker/docker-compose.yml up -d
 ```
-### 4.Verify the running container
+### 4. Verify the running container
 ```bash
 sudo docker ps
 ```
 
-### 5.Test the setup
+### 5. Test the setup
 Access the static website via:
 ```bash
 http://<server-ip>:8084
@@ -112,5 +112,6 @@ The setup ensures:
  - Port mapping for external access (8084 → 80)
  - Persistent storage through volume mapping
  - Simple one-command deployment and management via Docker Compose
+
 
 
