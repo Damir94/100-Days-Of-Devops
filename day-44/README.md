@@ -47,7 +47,7 @@ services:
 
 ## Deployment Steps
 
-###1. Create the Docker directory
+### 1. Create the Docker directory
 ```bash
 sudo mkdir -p /opt/docker
 cd /opt/docker
@@ -112,4 +112,5 @@ The setup ensures:
  - Port mapping for external access (8084 → 80)
  - Persistent storage through volume mapping
  - Simple one-command deployment and management via Docker Compose
+
 
