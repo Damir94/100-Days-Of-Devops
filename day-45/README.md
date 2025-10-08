@@ -26,7 +26,7 @@ All work was performed on App Server 3 in Stratos DC.
 
 ## Fixed Dockerfile
 File: /opt/docker/Dockerfile
-
+```bash
 FROM httpd:2.4.43
 
 # Change Listen port from 80 to 8080
@@ -42,7 +42,7 @@ RUN sed -i '/Include conf\/extra\/httpd-ssl.conf/s/^#//g' /usr/local/apache2/con
 # Copy SSL certificates into container
 COPY certs/server.crt /usr/local/apache2/conf/server.crt
 COPY certs/server.key /usr/local/apache2/conf/server.key
-
+```
 ## Key Fixes Made
 
 | Issue                                               | Root Cause                                                                    | Fix                                                             |
@@ -90,3 +90,4 @@ The final image:
  - Copies and configures valid SSL certificates
 
 This configuration ensures a secure and flexible Apache environment suitable for both HTTP and HTTPS access.
+
