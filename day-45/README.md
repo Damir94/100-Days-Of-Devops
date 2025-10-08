@@ -71,7 +71,7 @@ sudo docker run -d -p 8080:8080 --name httpd-ssl custom-httpd:latest
 
 ### 4. Verify it’s running
 ```bash
-sduo docker ps
+sudo docker ps
 ```
 
 ### 5. Test HTTP access
@@ -90,4 +90,5 @@ The final image:
  - Copies and configures valid SSL certificates
 
 This configuration ensures a secure and flexible Apache environment suitable for both HTTP and HTTPS access.
+
 
