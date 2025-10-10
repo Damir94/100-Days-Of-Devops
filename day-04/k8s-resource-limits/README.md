@@ -1,6 +1,6 @@
 # Nautilus DevOps Kubernetes Tasks Documentation
 
-##Overview
+## Overview
 This documentation summarizes the recent tasks completed by the Nautilus DevOps team to improve the performance and reliability of Kubernetes-hosted applications. 
 These tasks focused on implementing resource constraints to prevent pods from over-consuming cluster resources.
 
@@ -62,3 +62,4 @@ kubectl describe pod httpd-pod
  - Ensures the pod receives guaranteed minimum resources (requests) to run reliably.
  - Prevents the container from consuming excessive resources (limits), protecting other workloads in the cluster.
  - Helps mitigate performance issues in multi-tenant or resource-constrained environments.
+
