@@ -39,6 +39,11 @@ spec:
           memory: "20Mi"
           cpu: "100m"
 ```
+
+## How it works:
+ - requests: This is what the container is guaranteed to get from the node. Kubernetes uses this for scheduling decisions.
+ - limits: This is the maximum the container is allowed to use. If it tries to exceed this, it may be throttled (CPU) or killed (memory).
+
 ## Steps to Deploy
 
 ### 1. Save the YAML manifest as httpd-pod.yaml.
@@ -62,5 +67,6 @@ kubectl describe pod httpd-pod
  - Ensures the pod receives guaranteed minimum resources (requests) to run reliably.
  - Prevents the container from consuming excessive resources (limits), protecting other workloads in the cluster.
  - Helps mitigate performance issues in multi-tenant or resource-constrained environments.
+
 
 
