@@ -6,7 +6,7 @@ These tasks focused on implementing resource constraints to prevent pods from ov
 
 ## Task: Create a Pod with Resource Requests and Limits
 
-###Objective
+### Objective
 To address performance issues caused by resource contention, we created a pod with specific CPU and memory requests and limits. 
 This ensures that Kubernetes schedules the pod appropriately and prevents it from exceeding resource thresholds.
 
@@ -62,4 +62,5 @@ kubectl describe pod httpd-pod
  - Ensures the pod receives guaranteed minimum resources (requests) to run reliably.
  - Prevents the container from consuming excessive resources (limits), protecting other workloads in the cluster.
  - Helps mitigate performance issues in multi-tenant or resource-constrained environments.
+
 
