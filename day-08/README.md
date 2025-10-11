@@ -1,4 +1,4 @@
-# Day 7 — Installing Ansible 4.9.0 on a Jump Host (100 Days of Cloud/DevOps)
+# Day 8 — Installing Ansible 4.9.0 on a Jump Host (100 Days of Cloud/DevOps)
 
 As part of my 100 Days of DevOps Challenge, I’m exploring infrastructure automation tools and cloud-native practices.
 
@@ -56,6 +56,7 @@ Configuration Management Fundamentals - Installing and preparing Ansible.
 Linux Administration - Managing global software installations.
 
 Version Control in IaC Tools - Specifying exact versions for reproducibility.
+
 
 
 
