@@ -10,15 +10,16 @@ This setup lays the groundwork for future automated scripts that will handle rea
 Create a Kubernetes CronJob named nautilus that runs periodically and executes a dummy command using an Nginx container.
 
 ## Configuration Details
-| Parameter          | Description                          |
-| ------------------ | ------------------------------------ |
-| **Resource Type**  | CronJob                              |
-| **Name**           | `nautilus`                           |
-| **Container Name** | `cron-nautilus`                      |
-| **Image**          | `nginx:latest`                       |
-| **Schedule**       | `*/4 * * * *` (runs every 4 minutes) |
-| **Command**        | `echo Welcome to xfusioncorp!`       |
-| **Restart Policy** | `OnFailure`                          |
+| Field                            | Description                                      |
+| -------------------------------- | ------------------------------------------------ |
+| `apiVersion: batch/v1`           | Defines this as a CronJob resource.              |
+| `metadata.name: nautilus`        | The name of the CronJob.                         |
+| `schedule: "*/4 * * * *"`        | Runs the job every 4 minutes.                    |
+| `containers.name: cron-nautilus` | Name of the container running in each job pod.   |
+| `image: nginx:latest`            | Uses the latest Nginx image.                     |
+| `command`                        | Executes a simple echo command as a placeholder. |
+| `restartPolicy: OnFailure`       | Pods will restart only if they fail.             |
+
 
 
 ## YAML Manifest
@@ -83,3 +84,4 @@ Welcome to xfusioncorp!
 This task demonstrates how to configure a Kubernetes CronJob to execute recurring workloads. 
 The nautilus CronJob will automatically create and run pods every 4 minutes, ensuring reliable and 
 repeatable execution of commands — a foundational step for future automation in the Nautilus infrastructure.
+
