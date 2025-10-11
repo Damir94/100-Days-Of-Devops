@@ -15,6 +15,7 @@ We created a Kubernetes Job with the following specifications:
  - Image Used: ubuntu:latest
  - Command: sleep 5
  - Restart Policy: Never
+
 This job simply runs a short command (sleep 5) and exits successfully — serving as a placeholder for future automated scripts.
 
 ## YAML Manifest
@@ -59,3 +60,4 @@ kubectl logs <pod-name>
 ## Expected Outcome
 The Job will create a pod that runs the command sleep 5, waits for 5 seconds, and then completes successfully. 
 This confirms that the Job setup and execution flow in the cluster are functioning as expected.
+
