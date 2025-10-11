@@ -1,4 +1,4 @@
-# 100 Days 0f Devops - Day 47: Creating an HTTPD Pod in Kubernetes 
+# 100 Days 0f Devops - Day 48: Creating an HTTPD Pod in Kubernetes 
 
 ## Overview
 The Nautilus DevOps team is exploring Kubernetes for containerized application management.
@@ -69,3 +69,4 @@ This task demonstrates:
  - How to create a basic Pod manifest in Kubernetes.
  - How to use labels for organizing workloads.
  - How container images are defined and run inside Kubernetes Pods.
+
