@@ -1,4 +1,4 @@
-# Creating an HTTPD Deployment in Kubernetes
+# 100 Days 0f Devops - Day 49: Creating an HTTPD Deployment in Kubernetes
 
 ## Overview
 As part of the Nautilus DevOps team’s journey into Kubernetes-based application management, one team member was assigned to deploy an Apache HTTP Server (httpd) using a Kubernetes Deployment.
@@ -71,3 +71,4 @@ After successful deployment:
  - Deployments provide replica management, auto-healing, and rolling updates for applications.
  - The httpd Deployment acts as a controlled, scalable way to run a web server.
  - Labels (app: httpd) help group and manage related resources efficiently.
+
