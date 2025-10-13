@@ -47,18 +47,18 @@ spec:
 ```
 
 ## Deployment Steps
-1. Save the Manifest File
+1. Save the Manifest File.
 Save the above YAML as:
 ```bash
 nginx-replicationcontroller.yaml
 ```
 
-2. Apply the Configuration
+2. Apply the Configuration.
 Run the following command to create the ReplicationController:
 ```bash
 kubectl apply -f nginx-replicationcontroller.yaml
 ```
-3. Verify the ReplicationController
+3. Verify the ReplicationController.
 Check that it has been successfully created:
 ```bash
 kubectl get rc
@@ -69,7 +69,7 @@ Expected output:
 NAME                       DESIRED   CURRENT   READY   AGE
 nginx-replicationcontroller   3         3         3      ...
 ```
-4. Check the Pod Status
+4. Check the Pod Status.
 Verify that all pods created by the ReplicationController are running:
 ```bash
 kubectl get pods -l app=nginx_app
@@ -99,3 +99,4 @@ After applying the configuration:
 ## Next Steps
  - Expose the ReplicationController as a Service to make it accessible within or outside the cluster.
  - Consider upgrading to a Deployment for more flexible rolling updates and scaling in production environments.
+
