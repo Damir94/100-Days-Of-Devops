@@ -90,6 +90,9 @@ Shared file created by container 1
 ```
 This confirms both containers share the same volume.
 
+<img width="1749" height="556" alt="Screenshot 2025-10-14 at 6 53 24 AM" src="https://github.com/user-attachments/assets/5dc5ac9e-2890-41f3-a393-16674a74d619" />
+
+
 ## Why Use emptyDir?
  - Fast and simple: Data stays on the node’s local storage.
  - Temporary storage: Ideal for caching or passing temporary files.
@@ -115,3 +118,4 @@ kubectl delete pod volume-share-devops
 | Shared Volume | `emptyDir` (`volume-share`)                        |
 | Mounted Paths | `/tmp/news` and `/tmp/apps`                        |
 | Verification  | File created in one container visible in the other |
+
