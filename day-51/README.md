@@ -44,6 +44,9 @@ Output should show:
 ```makefile
 Image: nginx:1.17
 ```
+
+<img width="1587" height="886" alt="Screenshot 2025-10-13 at 8 35 16 PM" src="https://github.com/user-attachments/assets/d2e6772f-8170-4ad0-8d77-24ea07a1b267" />
+
 5. Rollback (If Needed)
 If something goes wrong during the rollout:
 ```bash
@@ -65,3 +68,4 @@ This restores the deployment to the previous stable version.
  - Apply similar rolling updates for other deployments whenever new application versions are released.
  - Enable readiness and liveness probes to further improve deployment reliability.
  - Monitor pod performance after updates using tools like Prometheus or Lens.
+
