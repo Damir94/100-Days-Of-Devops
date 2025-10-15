@@ -87,5 +87,6 @@ This task demonstrates how to pass and print environment variables inside a Kube
 It’s a useful foundational step for configuring Pods that depend on dynamic environment-based settings (e.g., app configuration, credentials, or greetings logic).
 
 Final Output:
-
+```css
 Welcome to Stratos Datacenter
+```
