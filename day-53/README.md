@@ -1,4 +1,4 @@
-# Troubleshooting and Setup of Nginx + PHP-FPM on Kubernetes
+# 100 Days of Devops - Day 53: Troubleshooting and Setup of Nginx + PHP-FPM on Kubernetes
 This documentation describes the steps taken to troubleshoot and fix the Nginx and PHP-FPM setup in a Kubernetes cluster, 
 along with copying the PHP application file into the correct document root.
 
@@ -82,3 +82,4 @@ This verified that both Nginx and PHP-FPM were correctly configured, and the app
  - Ensure Nginx fastcgi configuration correctly points to PHP-FPM within the same pod.
  - Use kubectl describe pod and kubectl logs to identify root causes before making changes.
  - This documentation can be used as a reference for future troubleshooting and deployment tasks with Nginx + PHP-FPM on Kubernetes.
+
