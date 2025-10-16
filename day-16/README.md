@@ -1,6 +1,6 @@
-Day 16 - Configuring an Nginx Load Balancer for High Availability
+# Day 16 - Configuring an Nginx Load Balancer for High Availability
 
-##The task
+## The task
 
 Day by day traffic is increasing on one of the websites managed by the Nautilus production support team. 
 Therefore, the team has observed a degradation in website performance. Following discussions about this issue, 
@@ -51,4 +51,5 @@ Configure LBR server as per the information given below:
  - curl http://APP2_IP:PORT
 
 <img width="574" height="164" alt="Screenshot 2025-09-09 at 6 51 23 AM" src="https://github.com/user-attachments/assets/c2add106-93f4-45e4-8968-d97bc56d993b" />
+
 
