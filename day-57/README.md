@@ -75,8 +75,7 @@ kubectl logs -f print-envars-greeting
 ```css
 Welcome to Nautilus Ltd
 ```
-
-
+<img width="1400" height="569" alt="Screenshot 2025-10-20 at 9 47 48 AM" src="https://github.com/user-attachments/assets/9edb0a30-3047-4c03-aa8a-e88b53d68818" />
 
 ## Key Takeaways
 - Environment variables are a powerful way to configure containers without hardcoding values.
@@ -94,3 +93,4 @@ Welcome to Nautilus Ltd
 ## Conclusion
 This exercise highlights a simple but essential DevOps concept: using environment variables in Kubernetes to pass dynamic configuration to containers.
 The print-envars-greeting Pod successfully demonstrates how to configure, run, and verify environment-based output in a controlled Kubernetes environment.
+
