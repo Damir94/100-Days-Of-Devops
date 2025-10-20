@@ -114,7 +114,10 @@ Init Done - Welcome to xFusionCorp Industries
 Init Done - Welcome to xFusionCorp Industries
 ...
 ```
+<img width="1400" height="569" alt="Screenshot 2025-10-20 at 9 47 48 AM" src="https://github.com/user-attachments/assets/518f975e-54eb-4a82-87f7-7530707b75d5" />
+
 ## Key Takeaways
  - Init containers are a great way to handle pre-deployment configuration steps in Kubernetes.
  - Using emptyDir volumes allows containers in the same Pod to share files easily.
  - This pattern ensures that your application starts only after all pre-requisite configurations are complete.
+
