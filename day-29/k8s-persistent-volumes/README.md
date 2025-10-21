@@ -13,12 +13,13 @@ The goal of this setup is to:
   - Expose the web application externally using a NodePort Service (web-datacenter) on port 30008.
 
 ## Directory Structure
+```scss
 kubernetes-datacenter/
 ├── pv-datacenter.yaml
 ├── pvc-datacenter.yaml
 ├── pod-datacenter.yaml
 └── web-datacenter-service.yaml
-
+```
 Each file defines a specific Kubernetes resource needed to deploy and expose the web application.
 
 ## Resource Explanations
@@ -185,3 +186,4 @@ This setup demonstrates how to:
   - Expose the application externally via a NodePort Service.
 
 You can easily extend this configuration for more complex deployments — such as using Deployments, ConfigMaps, or Ingress for production environments.
+
