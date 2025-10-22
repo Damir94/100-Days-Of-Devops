@@ -88,7 +88,10 @@ kubectl logs <redis-pod-name>
 ```
 Pods were running successfully, and Redis service was restored.
 
+<img width="1439" height="568" alt="Screenshot 2025-10-22 at 8 37 26 AM" src="https://github.com/user-attachments/assets/ba6fe5c7-3778-4544-b7fc-1b41b4b4ba3c" />
+
 ## Lessons Learned
  - Always double-check ConfigMap names and image tags before applying changes.
  - Inspect pod events and logs to quickly identify root causes.
  - Use rolling updates to safely apply fixes without downtime.
+
