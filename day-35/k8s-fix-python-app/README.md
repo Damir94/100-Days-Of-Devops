@@ -101,6 +101,7 @@ kubectl get nodes -o wide
 Then access the app in your browser:
 
 <img width="598" height="216" alt="Screenshot 2025-10-24 at 7 01 09 AM" src="https://github.com/user-attachments/assets/596d398a-071e-4d8f-ae24-2794a15948a5" />
+
 ```cpp
 http://<NodeIP>:32345
 ```
@@ -108,7 +109,9 @@ If using Minikube:
 ```bash
 minikube service python-deployment-xfusion --url
 ```
+
 ## Final Outcome
+
 | Component  | Status       | Notes                                     |
 | ---------- | ------------ | ----------------------------------------- |
 | Deployment | ✅ Running    | Using `poroko/flask-demo-appimage:latest` |
@@ -121,3 +124,4 @@ minikube service python-deployment-xfusion --url
   - Ensure Service targetPort matches the container’s internal port.
   - Use kubectl describe and event logs to quickly locate image and port-related issues.
   - Keep YAML manifests separated for better readability and reusability.
+
