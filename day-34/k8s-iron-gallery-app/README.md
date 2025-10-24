@@ -221,6 +221,8 @@ Test access (from your browser or curl):
 ```bash
 curl http://<NodeIP>:32678
 ```
+<img width="1418" height="826" alt="Screenshot 2025-10-23 at 9 33 44 PM" src="https://github.com/user-attachments/assets/d13702fc-ca9a-4b57-99f8-47d2d6929de0" />
+
 ## Future Improvements
   - Use PersistentVolumeClaims (PVC) for database and image storage.
   - Store passwords in Kubernetes Secrets instead of plain text.
@@ -232,3 +234,4 @@ This project demonstrates how to:
   - Deploy multi-tier applications (frontend + database) on Kubernetes.
   - Use Deployments, Services, and Namespaces efficiently.
   - Follow DevOps and Kubernetes best practices for modular and scalable configurations.
+
