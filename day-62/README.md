@@ -14,7 +14,7 @@ Kubernetes allows us to create a secret from this file using the following comma
 ```bash
 kubectl create secret generic media --from-file=/opt/media.txt
 ```
-## Explanation
+### Explanation
   - kubectl create secret generic — creates a secret of type “generic”.
   - media — name of the secret.
   - --from-file — adds the content of a local file as a key-value pair inside the secret.
@@ -52,7 +52,7 @@ spec:
       secret:
         secretName: media
 ```
-## Explanation
+### Explanation
   - volumeMounts: Defines where the secret will be mounted inside the container.
   - volumes.secret.secretName: References the Kubernetes secret we created earlier.
   - sleep 3600: Keeps the pod alive for 1 hour for verification purposes.
@@ -76,7 +76,7 @@ cat /opt/demo/media.txt
 
 You should see the content of the original media.txt file displayed — confirming that the secret was mounted successfully.
 
-## Validation Checklist
+### Validation Checklist
 Before final verification, ensure:
 | Item             | Description                                   | Status |
 | ---------------- | --------------------------------------------- | ------ |
@@ -84,13 +84,13 @@ Before final verification, ensure:
 | ✅ Pod created    | `secret-nautilus` is running                  | ✔️     |
 | ✅ Secret mounted | `/opt/demo/media.txt` accessible in container | ✔️     |
 
-## Key Takeaways
+### Key Takeaways
   - Kubernetes Secrets are the preferred way to store sensitive configuration data.
   - Secrets can be mounted as volumes or consumed as environment variables.
   - Encoding (base64) does not mean encryption — for production use, consider integrating KMS or sealed-secrets for stronger protection.
   - Always avoid hardcoding sensitive data in YAML files or container images.
 
-## Useful Commands Reference
+### Useful Commands Reference
 | Command                                                          | Description               |
 | ---------------------------------------------------------------- | ------------------------- |
 | `kubectl create secret generic media --from-file=/opt/media.txt` | Create the secret         |
@@ -98,3 +98,4 @@ Before final verification, ensure:
 | `kubectl get pods`                                               | Check pod status          |
 | `kubectl exec -it secret-nautilus -- /bin/bash`                  | Enter the pod             |
 | `cat /opt/demo/media.txt`                                        | Verify the mounted secret |
+
