@@ -66,9 +66,9 @@ ls -l /tmp/file.txt
 ```
 You should see an empty file named file.txt in the /tmp directory.
 
-Conclusion
-This task demonstrates:
+Conclusion. This task demonstrates:
   - How to configure a host-specific Ansible inventory.
   - How to create and execute a basic playbook.
   - How to validate automation results across remote servers.
 This forms the foundation for more advanced automation workflows such as file management, configuration deployment, and service provisioning in multi-server environments.
+
