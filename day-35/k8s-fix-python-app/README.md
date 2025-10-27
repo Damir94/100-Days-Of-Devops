@@ -51,7 +51,7 @@ Edited deployment to use the correct image and port:
 ```yaml
 containers:
 - name: python-container
-  image: poroko/flask-demo-appimage:latest
+  image: poroko/flask-demo-app:latest
   ports:
   - containerPort: 5000
 ```
@@ -124,4 +124,5 @@ minikube service python-deployment-xfusion --url
   - Ensure Service targetPort matches the container’s internal port.
   - Use kubectl describe and event logs to quickly locate image and port-related issues.
   - Keep YAML manifests separated for better readability and reusability.
+
 
