@@ -1,4 +1,4 @@
-# Python Flask App Deployment on Kubernetes
+# 1000 Days of Devops - Day 64: Python Flask App Deployment on Kubernetes
 ## Overview
 This document explains the deployment, debugging, and troubleshooting process for a Python Flask application running on a Kubernetes cluster. 
 The app was deployed using a Deployment and Service configuration and made accessible through a NodePort.
@@ -124,4 +124,5 @@ minikube service python-deployment-xfusion --url
   - Ensure Service targetPort matches the container’s internal port.
   - Use kubectl describe and event logs to quickly locate image and port-related issues.
   - Keep YAML manifests separated for better readability and reusability.
+
 
