@@ -1,4 +1,4 @@
-# Deploying Redis on Kubernetes — Setup and Configuration Guide
+# 100 Days of Devops - Day 66: Deploying Redis on Kubernetes — Setup and Configuration Guide
 
 ## Overview
 The Nautilus application development team observed performance issues due to frequent database queries. 
@@ -160,3 +160,4 @@ kubectl apply -f redis-service.yaml
   - EmptyDir volumes are useful for temporary, per-pod storage.
   - Using resource requests ensures pods get the required CPU share
   - Redis as an in-memory cache can drastically improve read performance by reducing database load.
+
