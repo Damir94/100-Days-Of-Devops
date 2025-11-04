@@ -1,4 +1,4 @@
-# Understanding Jenkins Parameterized Jobs — A Hands-On Walkthrough
+# 100 Days 0f Devops - Day 72: Understanding Jenkins Parameterized Jobs — A Hands-On Walkthrough
 
 As part of onboarding a new DevOps Engineer, the team decided to perform a simple but powerful exercise in Jenkins — creating and running a parameterized job.
 This activity helps engineers understand how Jenkins handles dynamic input values during builds, a concept that becomes essential in real CI/CD pipelines.
@@ -109,3 +109,4 @@ This small exercise laid the groundwork for more advanced Jenkins tasks, such as
 ### Key Takeaway
 This simple project demonstrated how parameterized jobs bring flexibility to Jenkins.
 They allow teams to reuse the same job definition for multiple environments, configurations, and scenarios — saving time and ensuring consistency across deployments.
+
