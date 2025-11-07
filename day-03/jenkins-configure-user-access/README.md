@@ -1,4 +1,4 @@
-# 100 Days of Devops - Day 70: Jenkins User Access Configuration – Nautilus Project
+# Jenkins User Access Configuration – Nautilus Project
 
 ## Overview
 This document outlines the steps performed to configure user access on the newly set up Jenkins server for the Nautilus CI/CD environment.
@@ -64,3 +64,4 @@ For review purposes:
 | Matrix Authorization  | Enabled             |
 | Anonymous Access      | Disabled            |
 | Job Access            | Read-only for Anita |
+
