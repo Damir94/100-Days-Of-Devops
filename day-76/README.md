@@ -1,15 +1,18 @@
 # 100 Days 0f Devops - Day 76: Jenkins Job Permissions Configuration
 Project: xFusionCorp Industries
 Task: Grant job-level access permissions for developers on Jenkins
-📋 Overview
 
-The DevOps team at xFusionCorp Industries was tasked with providing two newly onboarded developers access to an existing Jenkins job named Packages. Each developer requires specific permissions as outlined below.
+## Overview
+The DevOps team at xFusionCorp Industries was tasked with providing 
+two newly onboarded developers access to an existing Jenkins job named Packages. 
+Each developer requires specific permissions as outlined below.
 
-👤 User Access Requirements
+## User Access Requirements
 User	Password	Permissions
 sam	sam@pass12345	Build, Configure, Read
 rohan	rohan@pass12345	Build, Cancel, Configure, Read, Update, Tag
-⚙️ Step-by-Step Implementation
+
+## Step-by-Step Implementation
 1. Access Jenkins Dashboard
 
 Click the Jenkins button on the top bar.
@@ -29,13 +32,12 @@ Go to Manage Jenkins → Plugins → Available plugins
 
 Search for and install:
 
-✅ Role-based Authorization Strategy or
-
-✅ Matrix Authorization Strategy
+  - Role-based Authorization Strategy or
+  - Matrix Authorization Strategy
 
 After installation, select Restart Jenkins when installation is complete and no jobs are running.
 
-🔄 If the UI becomes unresponsive after restart, refresh your browser page.
+If the UI becomes unresponsive after restart, refresh your browser page.
 
 3. Configure Global Security
 
@@ -59,7 +61,7 @@ Scroll to the Enable project-based security checkbox and enable it.
 
 Under the security matrix, check:
 
-✅ Inherit permissions from parent ACL
+Inherit permissions from parent ACL
 
 5. Assign User Permissions
 For user sam
@@ -100,7 +102,7 @@ sam → Verify limited permissions.
 
 rohan → Verify extended permissions.
 
-🧠 Verification Notes
+## Verification Notes
 
 Ensure inheritance is enabled under job security settings.
 
@@ -115,6 +117,6 @@ Screenshots of Jenkins UI steps, or
 A Loom screen recording (https://loom.com
 ).
 
-✅ Outcome
-
+## Outcome
 Both developers now have secure, job-specific access to the Packages job, following best practices for least privilege and project-based authorization.
+
