@@ -104,21 +104,12 @@ sam → Verify limited permissions.
 rohan → Verify extended permissions.
 
 ## Verification Notes
-
-Ensure inheritance is enabled under job security settings.
-
-Confirm each user can only perform actions based on assigned permissions.
-
-Avoid modifying any other job configurations.
-
-Document your work using:
-
-Screenshots of Jenkins UI steps, or
-
-A Loom screen recording (https://loom.com
-).
+  - Ensure inheritance is enabled under job security settings.
+  - Confirm each user can only perform actions based on assigned permissions.
+  - Avoid modifying any other job configurations.
 
 ## Outcome
 Both developers now have secure, job-specific access to the Packages job, following best practices for least privilege and project-based authorization.
+
 
 
