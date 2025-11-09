@@ -1,5 +1,5 @@
 # 100 Days 0f Devops - Day 76: Jenkins Job Permissions Configuration
-Project: xFusionCorp Industries
+
 Task: Grant job-level access permissions for developers on Jenkins
 
 ## Overview
@@ -8,9 +8,10 @@ two newly onboarded developers access to an existing Jenkins job named Packages.
 Each developer requires specific permissions as outlined below.
 
 ## User Access Requirements
-User	Password	Permissions
-sam	sam@pass12345	Build, Configure, Read
-rohan	rohan@pass12345	Build, Cancel, Configure, Read, Update, Tag
+| **User**  | **Password**      | **Permissions**                                         |
+| --------- | ----------------- | ------------------------------------------------------- |
+| **sam**   | `sam@pass12345`   | `Build`, `Configure`, `Read`                            |
+| **rohan** | `rohan@pass12345` | `Build`, `Cancel`, `Configure`, `Read`, `Update`, `Tag` |
 
 ## Step-by-Step Implementation
 1. Access Jenkins Dashboard
@@ -119,4 +120,5 @@ A Loom screen recording (https://loom.com
 
 ## Outcome
 Both developers now have secure, job-specific access to the Packages job, following best practices for least privilege and project-based authorization.
+
 
