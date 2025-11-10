@@ -6,49 +6,32 @@ The application code is maintained in a Gitea repository and should be automatic
 
 ## Task Requirements
 
-Access Jenkins UI
+1. Access Jenkins UI
+    - URL: (Click Jenkins button in top bar)
+    - Username: admin
+    - Password: Adm!n321
+      
+2. Access Gitea UI
+    - URL: (Click Gitea button in top bar)
+    - Username: sarah
+    - Password: Sarah_pass123
+    - Repository: web_app (already cloned under /var/www/html on Storage Server)
 
-URL: (Click Jenkins button in top bar)
+3. Add Jenkins Slave Node
+    - Node name: Storage Server
+    - Label: ststor01
+    - Remote root directory: /var/www/html
+    - Launch method: SSH to agent
 
-Username: admin
+4. Pipeline Job
+    - Job name: xfusion-webapp-job
+    - Type: Pipeline (not Multibranch)
+    - Stage name: Deploy (case-sensitive)
 
-Password: Adm!n321
-
-Access Gitea UI
-
-URL: (Click Gitea button in top bar)
-
-Username: sarah
-
-Password: Sarah_pass123
-
-Repository: web_app (already cloned under /var/www/html on Storage Server)
-
-Add Jenkins Slave Node
-
-Node name: Storage Server
-
-Label: ststor01
-
-Remote root directory: /var/www/html
-
-Launch method: SSH to agent
-
-Pipeline Job
-
-Job name: xfusion-webapp-job
-
-Type: Pipeline (not Multibranch)
-
-Stage name: Deploy (case-sensitive)
-
-Deployment Target
-
-Deploy web_app repository contents into /var/www/html on the Storage Server.
-
-Apache on App Servers runs on port 8080.
-
-The Load Balancer URL should serve content directly at the root (e.g., https://<LBR-URL>).
+5. Deployment Target
+     - Deploy web_app repository contents into /var/www/html on the Storage Server.
+     - Apache on App Servers runs on port 8080.
+     - The Load Balancer URL should serve content directly at the root (e.g., https://<LBR-URL>).
 
 ## Jenkins Pipeline Script
 ```groovy
@@ -99,3 +82,4 @@ The main page should load directly — no /web_app subdirectory in the URL.
 ## Conclusion
 This Jenkins pipeline automates deployment for the static web_app repository, ensuring the latest code from Gitea is consistently deployed to all App Servers through the shared /var/www/html mount point on the Storage Server.
 The setup meets the DevOps team’s goal of enabling continuous integration and simplified release management.
+
