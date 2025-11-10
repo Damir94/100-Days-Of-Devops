@@ -34,7 +34,7 @@ Our goal is to:
 
 1. Navigate to: Manage Jenkins → Nodes → New Node
 2. Add a new node named Storage Server
-  - Type: Permanent agen
+  - Type: Permanent agent
   - Label: ststor01
   - Remote Root Directory: /var/www/html
   - Usage: Use this node as much as possible
@@ -107,3 +107,4 @@ This setup demonstrates a simple yet powerful CI/CD pipeline for static web appl
   - Agent-based execution on a dedicated storage node.
   - Automated cloning and deployment from a Git repository.
   - Seamless integration with Apache servers behind a load balancer.
+
