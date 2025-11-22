@@ -1,4 +1,4 @@
-# README – Deploying a Simple Apache Web Server Using Ansible
+# 100 Days of Devops – Day 88: Deploying a Simple Apache Web Server Using Ansible
 ## Overview
 
 This project provides an Ansible playbook that installs and configures a simple Apache (httpd) web server on all application servers in the Stratos Datacenter.
@@ -138,3 +138,4 @@ Running health checks after deployment
 
 This project demonstrates how Ansible can simplify and automate web server provisioning.
 By maintaining consistent configurations and enforcing best practices, the Nautilus DevOps team can support reliable application testing environments across all app servers.
+
