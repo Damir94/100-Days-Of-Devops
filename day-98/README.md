@@ -1,133 +1,151 @@
 # 100 Days of Devops - Day 98: Private VPC Infrastructure Deployment – Terraform Documentation
 
-This project provisions a fully private AWS network environment using Terraform. The goal is to help the Nautilus DevOps team deploy isolated compute resources inside a secure Virtual Private Cloud (VPC). The VPC, subnet, and EC2 instance created through this configuration are designed to be fully private, meaning they are not exposed to the public internet and can only communicate within the internal network.
+This project provisions a fully private AWS network environment using Terraform. The goal is to help the Nautilus DevOps team deploy isolated compute resources inside a secure Virtual Private Cloud (VPC). The environment includes a private VPC, a private subnet, and an EC2 instance restricted to internal-only access.
 
-##  Overview
+Terraform Scripts
 
-This Terraform configuration builds three main components:
+Below are the exact Terraform files required for the task.
 
-A private VPC
+### main.tf
+```hcl
+provider "aws" {
+  region = "us-east-1"
+}
 
-Ensures complete isolation from external networks
+# -------------------------------
+# VPC
+# -------------------------------
+resource "aws_vpc" "datacenter_priv_vpc" {
+  cidr_block           = var.KKE_VPC_CIDR
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = "datacenter-priv-vpc"
+  }
+}
 
-CIDR block: 10.0.0.0/16
+# -------------------------------
+# Subnet
+# -------------------------------
+resource "aws_subnet" "datacenter_priv_subnet" {
+  vpc_id                  = aws_vpc.datacenter_priv_vpc.id
+  cidr_block              = var.KKE_SUBNET_CIDR
+  map_public_ip_on_launch = false
+  tags = {
+    Name = "datacenter-priv-subnet"
+  }
+}
 
-A private subnet
+# -------------------------------
+# Security Group (Allow only VPC traffic)
+# -------------------------------
+resource "aws_security_group" "priv_sg" {
+  name        = "datacenter-priv-sg"
+  description = "Allow traffic only from inside VPC"
+  vpc_id      = aws_vpc.datacenter_priv_vpc.id
 
-No auto-assigned public IPs
+  ingress {
+    description = "Allow all internal traffic from VPC"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = [var.KKE_VPC_CIDR]
+  }
 
-CIDR block: 10.0.1.0/24
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = [var.KKE_VPC_CIDR]
+  }
 
-A private EC2 instance
+  tags = {
+    Name = "datacenter-priv-sg"
+  }
+}
 
-Instance type: t2.micro
+# -------------------------------
+# EC2 Instance (Private)
+# -------------------------------
+resource "aws_instance" "datacenter_priv_ec2" {
+  ami                    = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 (us-east-1 example)
+  instance_type          = "t2.micro"
+  subnet_id              = aws_subnet.datacenter_priv_subnet.id
+  vpc_security_group_ids = [aws_security_group.priv_sg.id]
 
-Located inside the private subnet
+  tags = {
+    Name = "datacenter-priv-ec2"
+  }
+}
+```
 
-Accessible only from within the VPC
+### variables.tf
+```hcl
+variable "KKE_VPC_CIDR" {
+  type        = string
+  description = "CIDR block for the private VPC"
+}
 
-All access to the instance is restricted using a security group that allows traffic only from the VPC CIDR block.
+variable "KKE_SUBNET_CIDR" {
+  type        = string
+  description = "CIDR block for the private subnet"
+}
+```
 
-##  Architecture Summary
+### outputs.tf
+```hcl
+output "KKE_vpc_name" {
+  value = aws_vpc.datacenter_priv_vpc.tags["Name"]
+}
 
-The created infrastructure includes:
+output "KKE_subnet_name" {
+  value = aws_subnet.datacenter_priv_subnet.tags["Name"]
+}
 
-datacenter-priv-vpc
+output "KKE_ec2_private" {
+  value = aws_instance.datacenter_priv_ec2.tags["Name"]
+}
+```
 
-A private VPC with internal-only routing.
+### How to Deploy
 
-datacenter-priv-subnet
-
-A subnet that does not assign public IPs on launch.
-
-datacenter-priv-ec2
-
-A compute instance operating fully inside the private network.
-
-Security Group Rules
-
-Inbound and outbound traffic are only allowed from/to the VPC CIDR
-
-No external IP or outside access is permitted
-
-This architecture is ideal for workloads requiring strong isolation, internal-only tools, or backend computation layers.
-
-##  File Structure
-.
-├── main.tf          # Contains VPC, Subnet, Security Group, EC2 instance resources
-├── variables.tf     # Input variables for VPC and Subnet CIDR blocks
-└── outputs.tf       # Useful output values for referencing deployed resources
-
-##  Terraform Variables
-
-You must define two variables in variables.tf:
-
-KKE_VPC_CIDR – CIDR block for the VPC
-
-KKE_SUBNET_CIDR – CIDR block for the subnet
-
-Example usage in terraform.tfvars:
-
-KKE_VPC_CIDR   = "10.0.0.0/16"
-KKE_SUBNET_CIDR = "10.0.1.0/24"
-
-##  How to Deploy
-
-Follow these steps to provision the infrastructure:
-
-1️⃣ Initialize Terraform
+1. Initialize Terraform
 ```bash
 terraform init
 ```
-2️⃣ Validate configuration
+2. Validate configuration
 ```bash
 terraform validate
 ```
-3️⃣ Review the plan
+3. Preview resources Terraform will create
 ```bash
 terraform plan
 ```
-4️⃣ Apply the changes
+4. Apply changes
 ```bash
 terraform apply
 ```
+### Outputs After Deployment
 
-Terraform will prompt for approval before creating the resources.
+Terraform will return:
 
-##  Terraform Outputs
+KKE_vpc_name
 
-After deployment, Terraform will display:
+KKE_subnet_name
 
-KKE_vpc_name – Name of the VPC
+KKE_ec2_private
 
-KKE_subnet_name – Name of the Subnet
+These help verify the infrastructure was created successfully.
 
-KKE_ec2_private – Name of the EC2 Instance
+### Security Notes
 
-These outputs help confirm creation and can be referenced in future modules or automation scripts.
+No public IPs are created.
 
-## Security Notes
+EC2 instance is not internet accessible.
 
-The EC2 instance is fully private and cannot be accessed from the internet.
+All traffic is restricted to 10.0.0.0/16.
 
-No public IPs are assigned at any point.
+Access requires internal routing, SSM Session Manager, or a bastion host.
 
-All inbound and outbound traffic is restricted to the 10.0.0.0/16 range.
-
-To access the instance, you must use internal networking (e.g., Bastion host, VPN, SSM Session Manager).
-
-##  Purpose of This Setup
-
-This configuration helps teams:
-
-Build secure internal-only environments
-
-Test private workloads
-
-Deploy backend services
-
-Create isolated environments for sensitive data, internal dashboards, or microservices not intended for public exposure
-
-## Conclusion
-
-This Terraform module demonstrates how to deploy a private VPC, subnet, and EC2 instance with strict internal-only access policies. It serves as a secure foundation for future AWS infrastructure expansion, ensuring proper isolation and network control.
+### Conclusion
+This Terraform configuration gives the Nautilus DevOps team a fully private VPC environment suitable for secure internal workloads. It provides a strong foundation for future cloud expansion with isolated networking and controlled access.
