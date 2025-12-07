@@ -134,3 +134,18 @@ resource "aws_route_table_association" "public_b" {
   route_table_id = aws_route_table.public.id
 }
 ```
+## Deployment Instructions
+Initialize Terraform
+```bash
+terraform init
+```
+Preview changes
+```bash
+terraform plan
+```
+Apply configuration
+```bash
+terraform apply
+```
+
+Once deployed, IPv6 addresses will appear automatically for instances launched inside the public subnets.
