@@ -1,3 +1,4 @@
+
 # Ansible Inventory Setup for App Server 2 – Stratos DC
 
 ## Overview
@@ -36,3 +37,4 @@ ansible -i /home/thor/playbook/inventory all -m ping
   - This inventory file enables Ansible to run playbooks located under /home/thor/playbook/ directly on App Server 2.
   - Ensure that SSH access and firewall settings allow communication between the jump host and the target server.
   - Any future servers can be added under the same [app_servers] group for centralized management.
+
