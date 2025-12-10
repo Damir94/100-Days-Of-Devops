@@ -1,4 +1,3 @@
-
 # Nginx Container Deployment on Application Server 3
 ## Overview
 The Nautilus DevOps team is conducting application deployment tests on selected application servers.
@@ -57,4 +56,5 @@ To verify the Nginx web server is working:
 sudo docker exec -it nginx_3 nginx -v
 ```
 You should see the installed version of Nginx.
+
 
