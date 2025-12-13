@@ -1,3 +1,4 @@
+
 # Ansible File Creation Playbook
 
 ## Overview
@@ -59,4 +60,5 @@ You can verify the results by running the following command on each app server:
 ls -l /opt/data.txt
 ```
 <img width="1706" height="625" alt="Screenshot 2025-10-26 at 11 07 01 AM" src="https://github.com/user-attachments/assets/e65f0efa-5cf3-4116-8a1f-c9eccdc25815" />
+
 
