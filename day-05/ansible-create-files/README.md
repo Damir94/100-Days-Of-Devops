@@ -1,4 +1,3 @@
-
 # Ansible Playbook: Copy Files to All Application Servers
 
 ## Overview
@@ -69,4 +68,5 @@ If the file exists, the playbook executed successfully
   - Ensure passwordless SSH or valid credentials are set for all target servers.
   - If /opt/devops doesn’t exist, the copy module automatically creates it.
   - This playbook can be reused for distributing other static files as well.
+
 
