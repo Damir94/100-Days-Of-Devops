@@ -1,4 +1,3 @@
-
 # Docker and Docker Compose Setup on App Server 3
 
 ## Overview
@@ -65,4 +64,5 @@ If the output shows a “Hello from Docker!” message, the setup is successful.
 ## Outcome
 Docker and Docker Compose were successfully installed and configured on App Server 3.
 This setup provides a solid foundation for the Nautilus DevOps team to begin containerizing their application stack and conducting integration tests.
+
 
