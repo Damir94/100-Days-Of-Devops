@@ -1,3 +1,4 @@
+
 # Configuring Default SSH User in Ansible
 
 ## Purpose
@@ -23,6 +24,7 @@ Run the following to confirm the change:
 ansible all -i /etc/ansible/hosts -m ping
 ```
 If the connection is successful, Ansible is now using javed by default.
+
 
 
 
