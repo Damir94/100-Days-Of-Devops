@@ -1,4 +1,3 @@
-
 # Deploying an Nginx ReplicationController in Kubernetes
 
 ## Overview
@@ -100,5 +99,6 @@ After applying the configuration:
 ## Next Steps
  - Expose the ReplicationController as a Service to make it accessible within or outside the cluster.
  - Consider upgrading to a Deployment for more flexible rolling updates and scaling in production environments.
+
 
 
