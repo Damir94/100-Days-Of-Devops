@@ -1,4 +1,3 @@
-
 # Kubernetes Pod Deployment — httpd Example
 
 ## Overview
@@ -78,4 +77,5 @@ This task was a foundational step in our Kubernetes learning path.
 We successfully deployed an Apache HTTP Server pod, applied labels for organization, and practiced managing it through kubectl commands.
 
 <img width="1274" height="567" alt="Screenshot 2025-10-08 at 12 24 54 PM" src="https://github.com/user-attachments/assets/0ebf6cf0-9bc7-440c-a626-e2a6a39114cf" />
+
 
