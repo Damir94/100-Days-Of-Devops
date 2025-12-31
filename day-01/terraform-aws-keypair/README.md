@@ -1,4 +1,3 @@
-
 # 100-days-of-devops
 
 # Day 01 – Terraform Lab: AWS Key Pair Generation
@@ -78,6 +77,7 @@ How to manage local files and permissions securely
 How to create AWS resources using Terraform’s declarative syntax
 
 Better understanding of how providers like tls and aws interact
+
 
 
 
