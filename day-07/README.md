@@ -1,4 +1,3 @@
-
 # Day 07 - Password-less SSH Enablement for Nautilus Project
 
 ## Business Context
@@ -108,4 +107,5 @@ sudo systemctl restart sshd
 Repeated for `steve` and `banner` on their respective servers.
 
 **Summary:** Successfully implemented secure, password-less SSH for `thor` to access all application servers through mapped sudo users. This work enables secure, automated operations for the Nautilus Project, demonstrating skills in Linux system administration, SSH hardening, and automation enablement.
+
 
