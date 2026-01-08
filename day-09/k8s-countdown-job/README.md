@@ -1,4 +1,3 @@
-
 # Kubernetes Job Template — countdown-xfusion
 
 ## Overview
@@ -61,6 +60,7 @@ kubectl logs <pod-name>
 ## Expected Outcome
 The Job will create a pod that runs the command sleep 5, waits for 5 seconds, and then completes successfully. 
 This confirms that the Job setup and execution flow in the cluster are functioning as expected.
+
 
 
 
